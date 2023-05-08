@@ -1,0 +1,177 @@
+body {
+ min-width: 100px;
+background-color: black !important
+;
+
+}
+
+a {
+    float: left;
+    color: rgb(241, 11, 99) !important;
+}
+
+.m-4 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.jumbotron.bg-cover.text-white.m-4 {
+  background-size: 100px !important;
+}
+
+.p-5.mb-4.bg-body-tertiary.rounded-3 {
+    height: 500px;
+    background-color: transparent !important;
+   
+  
+    
+
+}
+
+
+
+button {
+    background-color: rgb(226, 6, 42) !important;
+}
+
+.social.mb-4 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item.nav-link.active {
+    border-bottom: 2px solid darkblue;
+   
+}
+
+.nav-item.nav-link:hover {
+    border-bottom: 2px solid yellow ;
+}
+
+.nav-item.nav-link:hover {
+    border-left: 2px solid rgb(226, 7, 44);
+}
+
+.nav-item.nav-link:hover {
+    border-right: 2px solid rgb(84, 5, 84) ;
+}
+
+.nav-item.nav-link:hover {
+ 
+    border-top: 2px solid green;
+}
+
+.display-1.fw-bold {
+    animation: glow 6s infinite !important;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 12px yellow;
+        text-shadow: 0 0 40px rgb(164, 18, 103);
+        text-shadow: 0 0 100px rgb(5, 120, 3);
+    }
+    50% {
+        text-shadow: 0 0 9px yellow;
+        text-shadow: 0 0 14px rgb(164, 18, 103);
+        text-shadow: 0 0 100px rgb(5, 120, 3);
+    }
+    100% {
+        text-shadow: 0 0 9px rgb(8, 0, 255);
+        text-shadow: 0 0 14px rgb(99, 11, 62);
+        text-shadow: 0 0 100px rgb(234, 6, 6)
+
+    }
+}
+
+.display-1.fw-bold {
+    animation: glow 6s infinite !important;
+}
+
+@keyframes glow {
+    0% {
+       color: yellow
+    }
+    25% {
+        color :blue
+       
+    }
+
+    50% {
+        color: purple;
+    }
+
+    75% {
+        color:green
+    }
+    100% {
+       color:rgb(209, 19, 51)
+
+    }
+}
+
+.display-1.fw-bold.text-light {
+        background-image: linear-gradient(to right,yellow 2%, red 1%, blue 20%, rgb(111, 5, 60) 66%, green 20%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        float: right;
+        margin-right: 50px;
+        
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        padding-bottom: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      
+      .flip-card-back {
+        background-color: #ffffff;
+        color: #000000;
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-back img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .p-5.mb-4.bg-body-tertiary.rounded-3.m-5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      

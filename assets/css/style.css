@@ -1,18 +1,16 @@
 body {
- min-width: 100px;
-background-color: black !important
+  min-width: 100px;
+  background-color: rgb(0, 0, 0) !important
 ;
-
 }
 
 a {
-    float: left;
-    color: rgb(241, 11, 99) !important;
+  float: left;
+  color: rgb(241, 11, 99) !important;
 }
 
 .m-4 {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
 }
 
 .jumbotron.bg-cover.text-white.m-4 {
@@ -20,158 +18,495 @@ a {
 }
 
 .p-5.mb-4.bg-body-tertiary.rounded-3 {
-    height: 500px;
-    background-color: transparent !important;
-   
-  
-    
-
+  height: 500px;
+  background-color: transparent !important;
 }
 
-
-
 button {
-    background-color: rgb(226, 6, 42) !important;
+  background-color: rgb(226, 6, 42) !important;
 }
 
 .social.mb-4 {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-item.nav-link.active {
-    border-bottom: 2px solid darkblue;
-   
+  border-bottom: 2px solid rgb(237, 6, 160);
 }
 
 .nav-item.nav-link:hover {
-    border-bottom: 2px solid yellow ;
+  border-bottom: 2px solid yellow;
 }
 
 .nav-item.nav-link:hover {
-    border-left: 2px solid rgb(226, 7, 44);
+  border-left: 2px solid rgb(226, 7, 44);
 }
 
 .nav-item.nav-link:hover {
-    border-right: 2px solid rgb(84, 5, 84) ;
+  border-right: 2px solid rgb(84, 5, 84);
 }
 
 .nav-item.nav-link:hover {
- 
-    border-top: 2px solid green;
+  border-top: 2px solid green;
 }
 
 .display-1.fw-bold {
-    animation: glow 6s infinite !important;
+  animation: glow 6s infinite !important;
 }
 
 @keyframes glow {
-    0% {
-        text-shadow: 0 0 12px yellow;
-        text-shadow: 0 0 40px rgb(164, 18, 103);
-        text-shadow: 0 0 100px rgb(5, 120, 3);
-    }
-    50% {
-        text-shadow: 0 0 9px yellow;
-        text-shadow: 0 0 14px rgb(164, 18, 103);
-        text-shadow: 0 0 100px rgb(5, 120, 3);
-    }
-    100% {
-        text-shadow: 0 0 9px rgb(8, 0, 255);
-        text-shadow: 0 0 14px rgb(99, 11, 62);
-        text-shadow: 0 0 100px rgb(234, 6, 6)
-
-    }
+  0% {
+    text-shadow: 0 0 12px yellow;
+    text-shadow: 0 0 40px rgb(164, 18, 103);
+    text-shadow: 0 0 100px rgb(5, 120, 3);
+  }
+  50% {
+    text-shadow: 0 0 9px yellow;
+    text-shadow: 0 0 14px rgb(164, 18, 103);
+    text-shadow: 0 0 100px rgb(5, 120, 3);
+  }
+  100% {
+    text-shadow: 0 0 9px rgb(8, 0, 255);
+    text-shadow: 0 0 14px rgb(99, 11, 62);
+    text-shadow: 0 0 100px rgb(234, 6, 6);
+  }
 }
 
 .display-1.fw-bold {
-    animation: glow 6s infinite !important;
+  animation: glow 6s infinite !important;
+  text-shadow: 2px 0 0 rgb(255, 255, 255), 10px 0 0 rgb(13, 5, 71);
 }
 
 @keyframes glow {
-    0% {
-       color: yellow
-    }
-    25% {
-        color :blue
-       
-    }
+  0% {
+    color: yellow;
+  }
+  25% {
+    color: blue;
+  }
 
-    50% {
-        color: purple;
-    }
+  50% {
+    color: purple;
+  }
 
-    75% {
-        color:green
-    }
-    100% {
-       color:rgb(209, 19, 51)
-
-    }
+  75% {
+    color: green;
+  }
+  100% {
+    color: rgb(209, 19, 51);
+  }
 }
 
-.display-1.fw-bold.text-light {
-        background-image: linear-gradient(to right,yellow 2%, red 1%, blue 20%, rgb(111, 5, 60) 66%, green 20%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+.display-1.fw-bold.text-dark {
+  background-image: linear-gradient(
+    to right,
+    yellow 2%,
+    red 1%,
+    blue 20%,
+    rgb(111, 5, 60) 66%,
+    green 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #000000 !important;
+}
 
-      .flip-card {
-        background-color: transparent;
-        width: 300px;
-        height: 300px;
-        perspective: 1000px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        float: right;
-        margin-right: 50px;
-        
-      }
-      
-      .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 50px;
-        padding-bottom: 100%;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-      }
-      
-      .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-      }
-      
-      .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-      }
-      
-      .flip-card-front {
-        background-color: #000000;
-        color: #ffffff;
-      }
-      
-      .flip-card-back {
-        background-color: #ffffff;
-        color: #000000;
-        transform: rotateY(180deg);
-      }
-      
-      .flip-card-back img {
-        width: 100%;
-        height: 100%;
-      }
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  float: right;
+  margin-right: 50px;
+}
 
-      .p-5.mb-4.bg-body-tertiary.rounded-3.m-5 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-      }
-      
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding-bottom: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.flip-card-back {
+  background-color: #000000;
+  color: #ffffff;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back img {
+  width: 100%;
+  height: 100%;
+}
+
+.p-5.mb-4.bg-body-tertiary.rounded-3.m-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .display-1.fw-bold.text-light {
+    text-align: center;
+  }
+}
+
+.circle {
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 50%;
+  background-color: #f1e509;
+  color: #4d4545;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row {
+  display: flex;
+}
+.how-it-works.row .col-2 {
+  display: inline-flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid #f90000;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid #29029d;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
+h5 {
+  background-image: linear-gradient(
+    to right,
+    yellow 2%,
+    red 1%,
+    blue 20%,
+    rgb(111, 5, 60) 66%,
+    green 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mask {
+  border: 4px solid;
+  border-color: red;
+  border-radius: 40px;
+}
+
+.col-md-4 {
+  float: right;
+  padding: 4px;
+}
+
+.card.bg-dark.text-white {
+  background-color: transparent !important;
+}
+
+.flip-card2 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flip-card2:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+p {
+  font-size: 23px;
+}
+
+ul {
+  font-size: 23px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.form-control:focus {
+  border-color: #4d4dff;
+  box-shadow: 0 0 0 0.2rem rgba(77, 77, 255, 0.25);
+}
+.btn-primary {
+  background-color: #4d4dff;
+  border-color: #4d4dff;
+}
+.btn-primary:hover {
+  background-color: #3333ff;
+  border-color: #3333ff;
+}
+form {
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 40px;
+  text-shadow: 20px #f90000;
+  text-shadow: 2px 2px 4px #000;
+  box-shadow: 0 0 40px rgb(236, 22, 58), 0 0 120px green, 0 0 90px blue;
+  outline: 2px solid white, 0 0 120px yellow;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-dark.text-light {
+  animation-name: fadeIn1;
+  animation-delay: 0.1s;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn1 {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.jumbotron.bg-cover.text-white.m-4 {
+  animation-name: fadeIn2;
+  animation-delay: 0.1s;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn2 {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.p-5.mb-4.bg-body-tertiary.rounded-3.m-5 {
+  animation-name: fadeIn3;
+  animation-delay: 0.1s;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn3 {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.flip-card {
+  animation-name: fadeIn4;
+  animation-delay: 0.1s;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn4 {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.container.text-white {
+  animation-name: fadeIn5;
+  animation-delay: 0.1s;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn5 {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.display-1.fw-bold.text-dark {
+  text-shadow: 9px 0 0 #c3b9b9;
+  color: #000000;
+}
+
+.btn.btn-danger {
+  background-color: #f1e509 !important;
+  color: black !important;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+}
+.profile {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: url("https://i.imgur.com/sAtgYjl.jpg");
+  background-size: cover;
+  cursor: pointer;
+  border: 12px;
+  border-top-right-radius: 35px !important;
+  border-radius: 6px;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 1s;
+  border-top-right-radius: 35px !important;
+  border-radius: 6px;
+}
+.profile:hover .overlay {
+  opacity: 1;
+}
+.social-icons {
+  display: flex;
+  list-style: none;
+  bottom: 10px;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  left: 22px;
+}
+.social-icons li {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 1s;
+}
+.social-icons li:hover {
+  background: #fff;
+  color: #000;
+}
+.overlay .about {
+    position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  color: #fff;
+  flex-direction: row;
+}
+
+.wrapper {
+    width:200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.text-bg-dark {
+    display: flex !important;
+    flex-direction: row !important;
+}

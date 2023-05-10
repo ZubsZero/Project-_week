@@ -1,13 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+
 body {
   min-width: 100px;
   background-color: rgb(0, 0, 0) !important
 ;
+ font-family: 'Rubik', sans-serif ;
+
 }
 
 a {
   float: left;
   color: rgb(241, 11, 99) !important;
   margin-right: 9px;
+  
 }
 
 a:hover {
@@ -636,6 +647,20 @@ button {
 .btn.btn-success:hover {
   background-color: #000 !important;
   color:white !important;
+}
+
+@media only  screen and (max-width:600px){
+  .wrapper {
+    gap: 0px;
+    flex-direction: column;
+  }
+
+  .text-bg-dark {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
 }
 
 

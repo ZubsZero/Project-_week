@@ -601,7 +601,9 @@ button {
 
 }
 
-
+.card.bg-dark.text-light {
+  background-color: #000000 !important;
+}
 
 
 

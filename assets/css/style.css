@@ -505,23 +505,7 @@ form {
   flex-direction: row;
 }
 
-.wrapper {
-    width:200px;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    margin-top: 80px;
-    
-}
 
-.text-bg-dark {
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 200px;
-    justify-content: center;
-    
-    
-}
 
 
 .card.card-bod.text-bg-dark.w-100 {
@@ -533,73 +517,6 @@ form {
   height: 400px !important;
 }
 
-.profile2 {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  background: url("/assets/images/c12_marcel_brown__1_.jpg");
-  background-size: cover;
-  cursor: pointer;
-  border: 12px;
-  border-top-right-radius: 35px !important;
-  border-radius: 6px;
-  gap: 10px;
-}
-
-.profile3 {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  background: url("/assets/images/C12\ C2\ Connor\ Winkworth.jpg");
-  background-size: cover;
-  cursor: pointer;
-  border: 12px;
-  border-top-right-radius: 35px !important;
-  border-radius: 6px;
-  gap: 10px;
-}
-
-.profile4 {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  background: url("/assets/images/image.png");
-  background-size: cover;
-  cursor: pointer;
-  border: 12px;
-  border-top-right-radius: 35px !important;
-  border-radius: 6px;
-  gap: 10px;
-}
-
-.profile5 {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  background: url("/assets/images/C12\ Liyabona\ Mxhalis\ \(1\).JPG");
-  background-size: cover;
-  cursor: pointer;
-  border: 12px;
-  border-top-right-radius: 35px !important;
-  border-radius: 6px;
-  gap: 10px;
-}
-
-.profile2:hover .overlay {
-  opacity: 1;
-}
-
-.profile3:hover .overlay {
-  opacity: 1;
-}
-
-.profile4:hover .overlay {
-  opacity: 1;
-}
-
-.profile5:hover .overlay {
-  opacity: 1;
-}
 
 .card.card-body.text-bg-dark.w-100 {
   background-color: #000000 !important;
@@ -650,18 +567,52 @@ button {
 }
 
 @media only  screen and (max-width:600px){
-  .wrapper {
-    gap: 0px;
-    flex-direction: column;
-  }
-
-  .text-bg-dark {
+  
+  footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+
   }
+
+ 
+
+  
 }
+
+.card {
+  background-color: #000000 !important;
+  
+}
+
+.card-text {
+  color:#ffffff
+}
+
+.image.d-flex {
+  width: 600px;
+  height: 500px;
+  justify-content: center;
+ margin-left: 40px;
+}
+
+.image.d-flex {
+  list-style-type: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
